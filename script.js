@@ -1,14 +1,14 @@
 function calculateTip ( ) {
 
 	var billAmount = document.getElementById('billAmount').value;
-	var Tip = document.getElementById('Tip').value;
+	var realTip = document.getElementById('realTip').value;
 
-	if (billAmount === "" || Tip == 0) {
+	if (billAmount === "" || realTip == 0) {
 		window.alert("Please enter some values to run this");
 		return; 
 	}
 
-	var total = (billAmount * Tip )
+	var total = (billAmount * realTip )
 	total = Math.round(total * 100 )/100
 	total= total.toFixed(2)
 
