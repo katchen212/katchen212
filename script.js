@@ -3,7 +3,7 @@ function calculateTip () {
 	var billAmount = document.getElementById('billAmount').value;
 	var Tip = document.getElementById('Tip').value;
 
-	if (billAmount === "" || Tip == 0) {
+	if (billAmount == "" || Tip == 0) {
 		window.alert("Please enter some values to run this");
 		return; 
 	}
