@@ -9,14 +9,14 @@ function calculateTip () {
 	}
 
 	var total = (billAmount * Tip )
-	total = Math.round(total * 100 )/100
+	total = Math.round(total * 100)/100
 	total= total.toFixed(2)
 
 	document.getElementById('totalTip').style.display =" block"
 	document.getElementById('tip').innerHTML = total;
 
-
 }
 document.getElementById("totalTip").style.display = "none";
 
-document.getElementById("calculate").onclick = function () { calculateTip();};
+document.getElementById("calculate").onclick = function () { calculateTip();
+}
