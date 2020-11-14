@@ -1,14 +1,14 @@
 function calculateTip () {
 
 	var billAmount = document.getElementById('billAmount').value;
-	var Tip = document.getElementById('Tip').value;
+	var tip = document.getElementById('tip').value;
 
-	if (billAmount === "" || Tip == 0) {
+	if (billAmount === "" || tip == 0) {
 		window.alert("Please enter some values to run this");
 		return; 
 	}
 
-	var total = (billAmount * Tip )
+	var total = (billAmount * tip)
 	total = Math.round(total * 100)/100
 	total= total.toFixed(2)
 
@@ -18,5 +18,4 @@ function calculateTip () {
 }
 document.getElementById("totalTip").style.display = "none";
 
-document.getElementById("calculate").onclick = function () { calculateTip();
-}
+document.getElementById("calculate").onclick = function () { calculateTip();};
