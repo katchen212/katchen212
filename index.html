@@ -4,13 +4,17 @@
     <meta charset="utf-8" />
     <title>Tip Calculator</title>
     <link rel="stylesheet" href="main.css">
-    <script type="text/javascript">
-    src = "script.js"
-  </script>
+    <script>
+    function calculateTip() {
+    document.getElementById("calculate").onclick = function(){ calculateTip();};
+    }
+
+}
+document.getElementById("totalTip").style.display = "none";
+
+ document.getElementById("calculate").onclick = function () { calculateTip();};
 </head> 
-<script type="text/javascript">
-    src = "script.js"
-  </script>
+<body>
    <div id="container">
     <h1>Tip Calculator</h1>
     <div id="calculator">
@@ -39,8 +43,8 @@
     </div>
     <div id="totalTip">
       <sup>$</sup><span id="tip">0.00</span>
-
-    </div>
+    </body>
+   </div>
 </div>
 
 
